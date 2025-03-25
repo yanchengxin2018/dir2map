@@ -1,0 +1,5 @@
+src/pyarmor.bug.log
+.idea
+upload.txt
+src/py2safe.egg-info/
+dist/
