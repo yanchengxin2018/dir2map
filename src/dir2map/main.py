@@ -98,6 +98,3 @@ def main():
         Path(out_path).parent.mkdir(parents=True, exist_ok=True)
         with open(str(out_path), 'w', encoding='utf8', ) as file_obj:
             file_obj.write(result)
-
-
-main()

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dir2map"
-version = "2025.3.28.5"
+version = "2025.3.28.6"
 authors = [
     { name = "YanChengxin", email = "yan.cheng.xin@foxmail.com" },
 ]
