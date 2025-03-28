@@ -58,7 +58,7 @@ def get_directory_structure(root_dir, prefix="", exclude_dirs=None):
 
 def get_params():
     parser = argparse.ArgumentParser(description='获取目录相关参数')
-    parser.add_argument('-r', '--root_dir', type=Path, required=True,
+    parser.add_argument('-r', '--root_dir', type=Path, required=False,
                         help='根目录路径')
     parser.add_argument('-e', '--exclude_dirs', type=str, default='',
                         help='要排除的目录，多个目录用逗号分隔')
@@ -67,6 +67,9 @@ def get_params():
     args = parser.parse_args()
 
     root_dir = args.root_dir
+    if not root_dir:
+        root_dir = '.'
+
     out_path = args.out_path
     if args.exclude_dirs:
         exclude_dirs = args.exclude_dirs.split(',')

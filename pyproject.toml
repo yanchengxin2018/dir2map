@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dirtree"
-version = "2025.3.26.1"
+name = "dir2map"
+version = "2025.3.28.5"
 authors = [
     { name = "YanChengxin", email = "yan.cheng.xin@foxmail.com" },
 ]
@@ -17,7 +17,6 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "pyarmor==9.1.1"
 ]
 
 [project.urls]
@@ -25,4 +24,5 @@ Homepage = "https://github.com/yanchengxin2018/dirtree"
 Issues = "https://github.com/yanchengxin2018/dirtree/issues"
 
 [project.scripts]
-dirtree = "dirtree.main:main"
+dir2map = "dir2map.main:main"
+d = "dir2map.main:main"
